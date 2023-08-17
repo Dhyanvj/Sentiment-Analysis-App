@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Sentiment Analysis App</h1>
+    </header>
+    
+    <main class="main">
+        <form id="text-form" class="form">
+            <textarea id="text-input" class="text-input" name="text" placeholder="Enter text for sentiment analysis"></textarea>
+            <button id="analyze-button" class="analyze-button" type="button">Analyze</button>
+        </form>
+        <p id="result" class="result"></p>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2023 Sentiment Analysis App</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
